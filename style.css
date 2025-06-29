@@ -7,11 +7,10 @@ body {
 header {
     background-color: rgb(66, 196, 247);
     justify-items: center;
-    position: relative;
-    z-index: 1;
 }
 
 h1 {
+    font-size: 1.8rem;
     margin-top: 0px;
     padding-top: 18px;
     margin-bottom: 0px;
@@ -27,16 +26,15 @@ header p {
 
 nav {
     background-color: black;
-    position: relative;
-    z-index: 1;
 }
 
 ul {
     list-style: none;
     margin: 0px ;
     justify-self: center;
-    width: 38rem;
+    width: 90%;
     padding: 12px 0px;
+    text-align: center;
     cursor: default;
 }
 
@@ -59,9 +57,8 @@ li a:hover {
     color: white;
     justify-items: center;
     height: 18rem;
-    transform: rotate(-2deg);
-    position: relative;
-    scale: 115%;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 h2 {
@@ -70,7 +67,6 @@ h2 {
     margin: 0px;
     position: relative;
     top: 30%;
-    rotate: 2deg;
 }
 
 .top-section p {
@@ -78,7 +74,6 @@ h2 {
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.588);
     position: relative;
     top: 31%;
-    rotate: 2deg;
 }
 
 .top-section button {
@@ -92,11 +87,19 @@ h2 {
     height: 22px;
     width: 4rem;
     cursor: pointer;
-    rotate: 2deg;
 }
 
 .top-section button:hover {
     background-color: #004e9d;
+}
+
+.top-section img {
+    display: block;
+    justify-self: right;
+    position: fixed;
+    right: -19rem;
+    top: 7rem;
+    width: 44rem;
 }
 
 main {
@@ -105,7 +108,7 @@ main {
 }
 
 main .p1 {
-    margin-top: 8%;
+    margin-top: 4%;
     color: #0066cc;
     font-weight: bold;
     font-size: 1.1rem;
@@ -291,6 +294,7 @@ main .p1 {
     position: relative;
     left: 3%;
     top: 26px;
+    width: 90%;
 }
 
 .b-title {
@@ -300,6 +304,7 @@ main .p1 {
     position: relative;
     left: 3%;
     top: 26px;
+    width: 90%;
 }
 
 .b-content {
@@ -309,6 +314,7 @@ main .p1 {
     position: relative;
     left: 3%;
     top: 26px;
+    width: 90%;
 }
 
 .b-content a {
@@ -362,6 +368,7 @@ main .p1 {
     position: relative;
     left: 3%;
     top: 26px;
+    width: 90%;
 }
 
 .que {
@@ -372,6 +379,7 @@ main .p1 {
     position: relative;
     left: 3%;
     top: 26px;
+    width: 90%;
 }
 
 .ans {
@@ -381,6 +389,7 @@ main .p1 {
     position: relative;
     left: 3%;
     top: 26px;
+    width: 90%;
 }
 
 .contact-us {
@@ -460,4 +469,88 @@ footer {
 
 img[alt="instagram"], img[alt="twitter"] {
     scale: 112%;
+}
+
+@media (max-width: 949px) {
+    .top-section img {
+    right: -15rem;
+    top: 8rem;
+    width: 34rem;
+    }
+}
+
+@media (max-width: 549px) {
+    .top-section img {
+    right: -11rem;
+    top: 14rem;
+    width: 24rem;
+    }
+}
+
+@media (max-width: 745px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: .7rem;
+    }
+    ul {
+        font-size: .7rem;
+        text-align: center;
+        width: 100%;
+    }
+    li {
+        margin: 0px 6px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .top-section p {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 407px) {
+
+    header p {
+        font-size: .6rem;
+    }
+
+    li {
+        font-size: .6rem;
+        margin: 0px 5px;
+    }
+
+    .membership-container {
+        gap: 10px;
+    }
+    .membership-container .card {
+        width: 18rem;
+    }
+    input, textarea {
+        width: 18rem;
+    }
+    .contact-us button {
+        width: 18.5rem;
+    }
+}
+
+@media (max-width:339px) {
+
+    h1 {
+        font-size: 1.3rem;
+    }
+    header p {
+        font-size: .5rem;
+    }
+
+    li {
+        font-size: .5rem;
+    }
+
+    .top-section img {
+    right: -10rem;
+    top: 15rem;
+    width: 22rem;
+    }
 }
